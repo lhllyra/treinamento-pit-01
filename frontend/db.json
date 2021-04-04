@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "name": "luis",
+      "email": "luis@email.com",
+      "id": "ZcHaqo1"
+    },
+    {
+      "name": "leleu",
+      "email": "leleu@gmail.com",
+      "id": "K0TiSKx"
+    }
+  ],
+  "login": [],
+  "todos": [
+    {
+      "name": "asdfasdfadf",
+      "isDone": false,
+      "id": 691
+    },
+    {
+      "name": "asdfasdf",
+      "isDone": false,
+      "id": 224
+    }
+  ]
+}
