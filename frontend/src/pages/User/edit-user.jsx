@@ -7,17 +7,17 @@ import Page from '../../components/Page';
 import axios from '../../utils/api';
 
 function EditUser({ history }) {
-  const { id } = useParams();
+  const { _id } = useParams();
   const [input, setInput] = useState({
     name: '',
     email: '',
   });
 
-  const isNew = id === 'new';
+  const isNew = _id === 'new';
   const isValid = input.name && input.email;
 
   const fetchUser = async () => {
-    const response = await axios.get(`/api/user/${id}`);
+    const response = await axios.get(`/api/user/${_id}`);
     setInput(response.data);
   };
 
@@ -44,7 +44,7 @@ function EditUser({ history }) {
           await axios.post('/api/user', input);
           toast.success('Usuário criado com sucesso!');
         } else {
-          await axios.put(`/api/user/${id}`, input);
+          await axios.put(`/api/user/${_id}`, input);
           toast.success('Usuário editado com sucesso!');
         }
         history.push('/user');

@@ -17,6 +17,7 @@ function Header({ title = 'Todo System', routes = [] }) {
               {name}
             </Nav.Link>
           ))}
+          <Nav.Link onClick={() => localStorage.removeItem('@todoReactApp-token')} as={Link} to="/login">Logout</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

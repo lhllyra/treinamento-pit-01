@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -19,8 +20,8 @@ function User({ history }) {
     }
   };
 
-  const editUser = (_id) => {
-    history.push(`/user/${_id}`);
+  const editUser = (id) => {
+    history.push(`/user/${id}`);
   };
 
   const columns = [

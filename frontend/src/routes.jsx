@@ -4,7 +4,9 @@ import React from 'react';
 import {
   BrowserRouter, Switch, Route, Redirect,
 } from 'react-router-dom';
+
 import Navbar from './components/NavBar';
+
 import routes from './routelist';
 import { tokenKey } from './utils/constants';
 
